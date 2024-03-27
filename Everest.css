@@ -17,6 +17,7 @@ html {
     display: flex;
     justify-content: space-between;
     background-image: url("009A85DB-B631-42A9-869C-E781156EB86D.png");
+    background-size: cover;
     align-items: center;
     position: sticky;
     top:0;
