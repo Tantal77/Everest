@@ -20,8 +20,9 @@ html {
     background-repeat: no-repeat;
     align-items: center;
     position: sticky;
-    top:0;
-    overflow: hidden;
+    top:0;    
+    z-index: 999;
+    background-size: cover;
 }
 
 .logo {
@@ -45,6 +46,11 @@ html {
     font-size:1.4rem;
 }
 
+.navbar li a:hover {
+    color:orange;
+    transition: 0.5s;
+}
+
 .social-media {
     display: flex;
     flex-wrap: wrap;
@@ -60,4 +66,341 @@ html {
 span {
     color: white;
     font-size: 5rem;
+}
+
+/* end of main page *************************************************************************************************************************************************************************/
+
+/* gallery start ***************************************************************************************************************************************************************************/
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 10rem;
+    padding-left: 5rem;
+}
+.images-container img {
+    width:30%;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.images-container img:hover {
+    transform: scale(1.30);
+    transition: 2s ease;
+}
+
+/* gallery end ****************************************************************************************************************************************************************************/
+
+/* start of the offers ********************************************************************************************************************************************************************/
+
+.offers-container {
+    width:100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top:200px;
+    z-index: 500;
+
+}
+.offers-container li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.offers-container li a{
+    padding:0.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color:white;
+    border: 1px solid white;
+}
+
+.offers-container li a:hover{
+    color:black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.clima-title {
+    color:white;
+    position:relative;
+    top:200px;
+    text-align: center;
+    margin:1rem;
+}
+
+.climatization {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    top:200px;
+    padding: 4rem;
+}
+
+.clima-image {
+    width:40%;
+}
+
+.clima-description {
+    width: 40%;
+    color:white;
+    font-size: 1.4rem;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.heat-pump-title {
+    color:white;
+    position:relative;
+    top:200px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.heat-pump {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top:200px;
+    padding: 4rem;
+}
+
+.heat-pump-image {
+    width:40%;
+}
+
+.heat-pump-description {
+    width:40%;
+    color:white;
+    font-size: 1.4rem;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.solar-panels-title {
+    color:white;
+    position:relative;
+    top:200px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.solar-panels {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top:200px;
+    padding: 4rem;
+}
+
+.solar-panels-image {
+    width:40%;
+}
+
+.solar-panels-description {
+    width:40%;
+    color:white;
+    font-size: 1.4rem;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.recuperation-title {
+    color:white;
+    position:relative;
+    top:200px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.recuperation {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top:200px;
+    padding: 4rem;
+}
+
+.recuperation-image {
+    width:40%;
+}
+
+.recuperation-description {
+    width:40%;
+    color:white;
+    font-size: 1.4rem;
+    padding: 3rem;
+    text-align: justify;
+}
+
+/* end of the offers **********************************************************************************************************************************************************/
+
+/* start of the price list ****************************************************************************************************************************************************/
+
+.price-list-title {
+    color:red;
+    position: relative;
+    top:200px;
+    text-align: center;
+    padding: 3rem;
+    animation: 2s blinking ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.price-list-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 200px;
+    gap: 2rem;
+    margin-left: 3rem;
+}
+
+.aux-offer {
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.aux-title {
+    color:white;
+    text-align: center;
+}
+
+.aux-description {
+    color: white;
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+.aux-description li:before {
+    content: '✅';
+}
+.gree-offer {
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+.gree-title {
+    color: white;
+    text-align: center;
+}
+
+.hisense-offer {
+    position:relative;
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.hisense-title {
+    color:white;
+    text-align: center;
+}
+
+.promotion-banner {
+    position: absolute;
+    color: white;
+    background-color: green;
+    transform: rotate(45deg);
+    font-size: 1.4rem;
+    width: 180px;
+    text-align: center;
+    left: 425px;
+    bottom: 140px;
+}
+
+/* end of the price list ******************************************************************************************************************************************************/
+
+/* media queries start ********************************************************************************************************************************************************/
+
+@media (min-width: 393px){
+    html {
+        background-color: black;
+        
+    }
+
+    #header {
+        width: 150vw;
+    }
+    .navbar {
+        display: none;
+        position: absolute;
+        background-color: black;
+        width:81vh;
+        z-index: 9999;
+        margin-top:0;
+        padding-left:1rem;
+        left:-18rem;
+        text-align: center;
+        padding-top:4rem;
+        z-index: -1;
+    }
+    .dropbutton {
+        padding:0;
+        border:0;
+        margin:0;
+    }
+    .dropbutton img {
+        display: flex;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown:hover .navbar {
+        display:block;
+    }
+
+}
+
+@media (min-width: 768px){
+    html {
+        background-color: green;
+    }
+    #header {
+        width:100%;
+    }
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: inherit;
+        position:relative;
+        width:100%;
+        left:0;
+        top:0;
+        padding-top:0;
+    }
+    .dropbutton {
+        display:none;
+    }
+    .dropdown:hover .navbar {
+        display:flex;
+    }
+    
+  
+}
+
+@media (min-width: 992px){
+    html {
+        background-color: black;
+    }
 }
